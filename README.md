@@ -2,7 +2,7 @@
 This project is a movie review website with six movie categories.
 
 ## Live Page
-[Canlı Sayfa](https://nilaysuzer.github.io/movie.com/)
+[Live Page](https://nilaysuzer.github.io/movie.com/)
 
 ## Project Structure
 - `index.html` – Main page
