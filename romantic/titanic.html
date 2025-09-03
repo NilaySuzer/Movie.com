@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Titanic</title>
+<style>
+   html {
+    scroll-behavior: smooth; 
+  }
+ body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom,black,#da2244,black,black);
+    color: #eee;
+    margin: 20px;
+  } 
+
+  .container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  
+  .movie-box {
+    width: 420px;
+  }
+
+  .movie-box img {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+  }
+
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+  }
+
+  .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 22px;
+    left: 1390px;
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+    background-color: #da2244;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-size: medium;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+  }
+  .back:hover {
+    background-color: #ca272f;
+    box-shadow: 0 2px 6px #ca272f;
+  }
+  
+
+  .button-container button {
+    background-color: #da2244;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-size: medium;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+  }
+
+  .button-container button:hover {
+    background-color: #ca272f;
+    box-shadow: 0 2px 6px #ca272f;
+  }
+
+  .movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     margin-top: -590px;
+     margin-left: 430px;
+     height: 589px;
+    background-color: #1818188d;
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 1058px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+    color: #ddd;
+  }
+
+  .comments {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .movie-card h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   align-items:flex-start;
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .movie-card .imdb {
+    margin-top:15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f5c518;
+  }
+
+  .movie-card p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #ccc;
+  }
+
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2px;
+    margin-top: 50px;
+  }
+
+  .comment-card {
+     margin-top: 10px; 
+     margin-bottom: 2px;
+    width: 1500px;
+    background-color: #1818188d;
+    border-radius: 8px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+  }
+
+  .comment-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #f5c518;
+  }
+</style>
+</head>
+<body>
+  <div class="movie-box">
+    <img src="../imgs/titanic.png" alt="Movie Poster" />
+    <div class="button-container">
+      <a href="https://youtu.be/kVrqfYjkTdQ?feature=shared"><button onclick="alert('🎥Click on the okey button to be redirected to trailer')">Official Trailer</button></a>
+      <a href="#comment"><button>Comments</button></a>
+      <a href="https://watch.plex.tv/movie/titanic-1997"><button onclick="alert('🎥You will be redirected to Plex Tv')">Watch Now</button></a>
+    </div>
+    <a href="../index.html#romantic"><button class="back">Back</button></a>
+
+    <div class="movie-card">
+      <h2>Titanic</h2>
+      <div class="imdb">IMDb: 7.9/10</div>
+      <p>
+        Titanic (1997) is a romantic drama directed by James Cameron.
+        It tells the story of Jack and Rose, two passengers from very different social classes who meet and fall in love aboard the ill-fated RMS Titanic during its maiden voyage. 
+        As their romance blossoms, the ship tragically hits an iceberg and begins to sink, forcing them to fight for survival. The film blends epic disaster with heartfelt love, exploring themes of class divide, sacrifice, and enduring love.
+      </p>
+    </div>
+  </div>
+
+  <section id="comment">
+  <div class="comment-container">
+      <div class="comment-card">
+        <strong>Alex K.</strong>
+        JACK IS DEAD BEACUSE OF YOUR GIANT ASS ROSE
+      </div>
+      <div class="comment-card">
+        <strong>Andrea T.</strong>
+        My favourite couple❤️
+      </div>
+      <div class="comment-card">
+        <strong>Marvin S.</strong>
+        Amazing movie! DO YOU KNOW THE BLONDE GUY IS A REAL RACERR???
+      </div>
+      <div class="comment-card">
+        <strong>Emilia C.</strong>
+       Started again... My fav❤️
+      </div>
+      <div class="comment-card">
+        <strong>Maxie maxie</strong>
+       WHEN WİLL YOU LOAD THE OTHER MOVİESSS
+      </div>
+      <div class="comment-card">
+        <strong>Sky B.</strong>
+       Rose is soooooo hot
+      </div>
+      <div class="comment-card">
+        <strong>Hailey E.</strong>
+       Guys, stop givin spoieess!!!
+      </div>
+      <div class="comment-card">
+        <strong>Skylerr</strong>
+       Switching to Titanic🚗🚗🚗🚗
+      </div>
+       <div class="comment-card">
+        <strong>spongebobsquarepants</strong>
+       2000's... You know the 2000's Patrick?
+      </div>
+  </div>
+      
+      
+  </div>
+</section>
+
+</body>
+</html>

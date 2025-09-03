@@ -1,0 +1,413 @@
+  html {
+    scroll-behavior: smooth; 
+  }
+    body {
+    font-family:'Bebas','Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+  background-image: linear-gradient(to bottom,black,red,black,#f5c518,black,#050244,black,#047880,black,#da2244,black,#b20710,black,#f57f18,black);
+  }
+  .general2{
+    margin-top: 150px;
+  }
+ .general1 h2 {
+      margin-bottom: 10px;
+      margin-left: 5px;
+     color:white;
+     font-size: xx-large;
+      
+    } 
+    h1 {
+      font-size: xx-large;
+     color: white;
+    }
+.a {
+   background-image: linear-gradient(to right,#f5c518,black,#f5c518);
+}
+.an {
+  background-image: linear-gradient(to right,#050244,black,#050244);
+}
+.sc {
+  background-image:linear-gradient(to right,#047880,black,#047880);
+}
+.ro {
+    background-image: linear-gradient(to right,#da2244,black,#da2244);
+}
+.ho {
+    background-image:linear-gradient(to right,#b20710,black,#b20710);
+}
+.co {
+  background-image: linear-gradient(to right,#f57f18,black,#f57f18);
+}
+
+.img-container img:hover {
+  box-shadow: 0 10px 25px rgb(255 255 255 / 0.4);
+}
+.card {
+  border: 2px solid #f5c518;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  height: 600px;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg, 
+    transparent, 
+    rgba(255,255,255,0.5), 
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card:hover::before {
+  animation: shine 0.8s ease forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+  .card img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover; 
+}
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin-top: 2px;
+    }
+
+   .card button {
+  overflow: hidden;   
+  background-color: #4c3ac0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: medium;
+  margin: 10px 0;
+}
+
+
+.card button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -40%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(-25deg);
+  transition: left 0.6s ease;
+  pointer-events: none; /* tıklamayı engellemesin */
+}
+
+.card button:hover {
+  color: black;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+/* Hover’da shine hareketi */
+.card button:hover::before {
+  left: 120%;
+}
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card-container
+     { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 10px; 
+        margin-top: 1   
+    }
+
+    .button-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: -680px;
+    gap: 40px;
+    margin-left: 5px;
+    }
+    button {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  color: white;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-fi0lter: blur(10px); 
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.716);
+  border: 1px solid rgba(255, 255, 255, 0.092); 
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 17px;
+  width: 190px;
+}
+
+  .search-box {
+    margin-top: -5px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 300px;
+  }
+  .search-box:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+ .action:hover, 
+ .soon:hover {
+  box-shadow:0 4px 30px #f5c518;
+  background-color: #f5c518;
+}
+.animation:hover {
+  box-shadow: 0 4px 30px #050244;
+background-color: #050244;
+}
+.scifi:hover {
+  box-shadow: 0 4px 30px#047880;
+  background-color: #047880;
+}
+.romantic:hover {
+  box-shadow: 0 4px 30px #da2244;
+   background-color: #da2244;
+}
+.horror:hover {
+ box-shadow: 0 4px 30px #b20710;
+   background-color: #b20710;
+}
+.comedy:hover {
+  box-shadow: 0 4px 30px#f57f18;
+  background-color: #f57f18;
+}
+.search {
+  margin-left: 10px;
+  padding: 8px 5px;
+    border-radius: 20px;
+}
+.search:hover {
+  background-color:#f5c518;
+}
+#action button {
+background-color:#f5c518;
+}
+#action button:hover {
+background-color: #b20710;
+box-shadow: 0 2px 6px #b20710;
+}
+#animation button {
+ background-color: #050244;
+}
+#animation .card {
+    border: 2px solid #050244;
+}
+#animation button:hover {
+background-color: #7a3fbc;
+box-shadow: 0 2px 6px #7a3fbc;
+}
+#scifi button {
+  background-color:#047880;
+}
+#scifi button:hover {
+  background-color:#1207b2;
+  box-shadow: 0 2px 6px #1207b2;
+}
+#scifi .card {
+  border: 2px solid #047880;
+}
+#romantic button {
+  background-color: #da2244;
+}
+#romantic button:hover {
+  background-color: #ca272f;
+    box-shadow: 0 2px 6px #ca272f;
+}
+#romantic .card {
+  border: 2px solid #ca272f;
+}
+#horror button {
+  background-color: #000000;
+}
+#horror button:hover {
+  background-color: #b20710;
+    box-shadow: 0 2px 6px #b20710;
+}
+#horror .card {
+  border: 2px solid #b20710;
+}
+#comedy button {
+  background-color: #f57f18;
+}
+#comedy button:hover {
+  background-color: #b22307;
+    box-shadow: 0 2px 6px #b22307;
+}
+#comedy .card {
+  border: 2px solid #f57f18;
+}
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  margin-top: -550px;
+  margin-left: 200px;
+  margin-right: 15px;
+  gap: 5px;
+}
+img {
+    width: 100px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+a:hover img {
+  transform: scale(1.05);
+}
+    .film-list {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .film-card {
+      background-color: #1c1c1c;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .film-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .film-rating {
+      font-style: italic;
+      color: #ffc107;
+    }
+
+    .category-hidden 
+    { 
+      display: none; 
+    }
+  .movies--grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 260px;
+    margin-top: 30px;
+  }
+  .movie--card {
+    width: 280px;
+    height: 520px; 
+    text-align: center;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 14px rgb(41, 1, 1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 5px;
+    margin-top: 2px;
+  }
+  .movie--card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.7);
+  }
+  .movie--poster {
+  height: 450px;
+  width: 100%;
+  object-fit: cover; 
+  }
+
+  .ribbon {
+    width: 131px;
+    height: 520px;
+    background: #ff000069;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0 0 15px;
+    border-top-left-radius: 12px;
+    z-index: 10;
+  }
+  .ribbon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transform: rotate(30deg);
+  }
+
+  .movie--info {
+    top: 2px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+  }
+  .movies--grid button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 15px;
+    color: whitesmoke;
+    font-weight: 1000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-size: medium;
+    margin-top: -10px;
+  }
+  .movies--grid button:hover {
+    background-color: #b20710;
+  }
+  

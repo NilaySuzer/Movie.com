@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie?🍿</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="../movie.com/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <section class="general1">
+  <h1>🍿Welcome! Looking for a movie to watch?🍿</h1>
+  <form action="index.html" method="get">
+  <input class="search-box" type="search" name="q" placeholder="Search...">
+  <button class="search" type="submit">Search</button>
+  </form>
+
+<div class="movies--grid">
+  <div class="movie--card">
+    <div class="ribbon" title="Coming Soon">
+      <img src="../movie.com/imgs/clapperboard.png" alt="Video Kamera İkonu" />
+    </div>
+    <img class="movie--poster" src="../movie.com/imgs/s5.png"  alt="Movie 1 Poster" />
+     <div class="movie--info">
+      <a href="https://youtu.be/nb_fFj_0rq8?feature=shared"><button>Watch trailer</button></a>
+    </div>
+  </div>
+  
+
+  <div class="movie--card">
+    <div class="ribbon" title="Coming Soon">
+      <img src="../movie.com/imgs/clapperboard.png" title="video camera stickers" alt="Video Kamera İkonu" />
+    </div>
+    <img class="movie--poster" src="../movie.com/imgs/s2.png" alt="Movie 2 Poster" />
+    <div class="movie--info">
+      <a href="https://youtu.be/YShVEXb7-ic?feature=shared"><button>Watch trailer</button></a>
+    </div>
+  </div>
+    <div class="movie--card">
+    <div class="ribbon" title="Coming Soon">
+      <img src="../movie.com/imgs/clapperboard.png" title="video camera stickers" alt="Video Kamera İkonu" />
+    </div>
+    <img class="movie--poster" src="../movie.com/imgs/s1.png" alt="Movie 3 Poster" />
+    <div class="movie--info">
+      <a href="https://youtu.be/vAtUHeMQ1F8?feature=shared"><button>Watch trailer</button></a>
+    </div>
+  </div>
+   <div class="movie--card">
+    <div class="ribbon" title="Coming Soon">
+      <img src="../movie.com/imgs/clapperboard.png" title="video camera stickers" alt="Video Kamera İkonu" />
+    </div>
+    <img class="movie--poster" src="../movie.com/imgs/s3.png" alt="Movie 4 Poster" />
+    <div class="movie--info">
+      <a href="https://youtu.be/Vsn7sVxCq1M?feature=shared"><button>Watch trailer</button></a>
+    </div>
+  </div>
+  </div>
+  
+  <section class="buttons">
+   <div class="button-container">
+     <h2>Categories🔻</h2> 
+    <a href="#action"><button class="action">💥Action💥</button></a>
+    <a href="#animation"><button class="animation">🧸Animation🧸</button></a>
+    <a href="#scifi"><button class="scifi">👽Sci-fi👽</button></a>
+    <a href="#romantic"><button class="romantic">❤️Romantic❤️</button></a>
+    <a href="#horror"> <button class="horror">👻Horror👻</button></a>
+    <a href="#comedy"><button class="comedy">🎉Comedy🎉</button></a>
+   </section>
+
+  <section class="general2">
+    <!--<h2 class="s">🍿Scroll or click on the category buttons for more🍿</h2>-->
+    <section id="action">
+    <h2 class="a">Action Movies</h2>
+   <div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/faf.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title">Fast&Furious</div>
+        <a href="../movie.com/action/faf.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/faff.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Fast&Furious: Tokyo Drift</div>
+        <a href="../movie.com/action/tokyo.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/avengers.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">The Avengers </div>
+        <a href="../movie.com/action/avengers.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/mm.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Mad Max: Fury Road</div>
+        <a href="../movie.com/action/Madmax.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/dk.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">The Dark Knight</div>
+        <a href="../movie.com/action/darkn.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+    </section>
+    <script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+
+ <section id="animation">
+
+<h2 class="an">Animation Movies</h2>
+  <!-- Kart 1 -->
+   
+   <div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/up.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title">Up</div>
+        <a href="../movie.com/animation/up.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/coraline.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Coraline</div>
+        <a href="../movie.com/animation/coraline.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/coco.png" alt="Resim 3">
+      <div class="card-content">
+        <div class="card-title">Coco</div>
+        <a href="../movie.com/animation/coco.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/corpseb.png" alt="Resim 4">
+      <div class="card-content">
+        <div class="card-title">Corpse Bride</div>
+        <a href="../movie.com/animation/cb.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/ch.png" alt="Resim 5">
+      <div class="card-content">
+        <div class="card-title">Despicable Me</div>
+        <a href="../movie.com/animation/dm.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+ </section>
+ <script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+
+  <section id="scifi">
+
+<h2 class="sc">Sci-fi Movies</h2>
+
+<div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/tenet.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title">Tenet</div>
+        <a href="../movie.com/scifi/tenet.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/lucy.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Lucy</div>
+        <a href="../movie.com/scifi/lucy.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/interstelllar.png" alt="Resim 3">
+      <div class="card-content">
+        <div class="card-title">Interstellar</div>
+        <a href="../movie.com/scifi/int.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/inc.png" alt="Resim 4">
+      <div class="card-content">
+        <div class="card-title">Inception</div>
+        <a href="./scifi/inc.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/matrix.png" alt="Resim 5">
+      <div class="card-content">
+        <div class="card-title">Matrix</div>
+        <a href="./scifi/matrix.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+  </section>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+
+       <section id="romantic">
+        <h2 class="ro">Romantic Movies</h2>
+ <div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/mby.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title">Me before you</div>
+        <a href="./romantic/mby.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/notebook.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">The Notebook</div>
+        <a href="./romantic/notebook.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/oneday.png" alt="Resim 3">
+      <div class="card-content">
+        <div class="card-title">One Day</div>
+        <a href="./romantic/oneday.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/tenth.png" alt="Resim 4">
+      <div class="card-content">
+        <div class="card-title">10 Things</div>
+        <a href="./romantic/10th.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/titanic.png" alt="Resim 5">
+      <div class="card-content">
+        <div class="card-title">Titanic</div>
+        <a href="./romantic/titanic.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+</section>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+        <section id="horror">
+          <h2 class="ho">Horror Movies</h2>
+          <div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/elm.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title"> A Nightmare...</div>
+        <a href="./horror/elm.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/scream.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Scream</div>
+        <a href="./horror/scream.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/wp.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Weapons</div>
+        <a href="./horror/weapons.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/anna.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Annabelle</div>
+        <a href="./horror/annabelle.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/it.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">IT</div>
+        <a href="./horror/it.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+ </section>
+ <script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+
+         <section id="comedy">
+          <h2 class="co">Comedy Movies</h2>
+<div class="card-container">
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/once.png" alt="Resim 1">
+      <div class="card-content">
+        <div class="card-title">Once upon a time...</div>
+        <a href="./comedy/ouat.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kart 2 -->
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/dp.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Deadpool</div>
+        <a href="./comedy/dp.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/ha.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Home alone</div>
+        <a href="./comedy/ha.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/dadh.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Daddy's Home</div>
+        <a href="./comedy/dh.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+
+   <a href="#" class="card-link">
+    <div class="card">
+      <img src="../movie.com/imgs/haa.png" alt="Resim 2">
+      <div class="card-content">
+        <div class="card-title">Home alone 2</div>
+        <a href="./comedy/ha2.html"><button>Review</button></a>
+      </div>
+    </div>
+  </a>
+</div>
+  </section>
+  <script>
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if(target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
+</script>
+  </section>
+</body>
+</html>
