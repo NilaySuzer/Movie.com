@@ -1,4 +1,4 @@
-# Movie.com
+# movie.com
 This project is a movie review website with six movie categories.
 
 ## Live Page
